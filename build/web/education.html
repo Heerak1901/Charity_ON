@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Details Form</title>
+    <link rel="stylesheet" href="education.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Education Details Form</h2>
+      <form id="educationForm">
+        <div class="education-section" id="section-10th">
+          <div class="section-header" data-target="10th-details">
+            <h3>10th Grade</h3>
+            <button type="button" class="toggle-button">+</button>
+          </div>
+          <div class="section-details" id="10th-details">
+            <label for="10thSchoolName">School Name</label>
+            <input
+              type="text"
+              id="10thSchoolName"
+              name="school_name_10"
+              required
+            />
+
+            <label for="10thBoard">Board</label>
+            <input type="text" id="10thBoard" name="board_name10" required />
+
+            <label for="10thYear">Passing Year</label>
+            <input type="date" id="10th-date" name="passing_year10" required />
+
+            <label for="10thGrade">Percentage/Grade</label>
+            <input type="text" id="10thGrade" name="percentage10" required />
+
+            
+          </div>
+        </div>
+
+        <div class="education-section" id="section-12th">
+          <div class="section-header" data-target="12th-details">
+            <h3>12th Grade</h3>
+            <button type="button" class="toggle-button">+</button>
+          </div>
+          <div class="section-details" id="12th-details">
+            <label for="12thSchoolName">School Name</label>
+            <input
+              type="text"
+              id="12thSchoolName"
+              name="school_name12"
+              required
+            />
+
+            <label for="12thBoard">Board</label>
+            <input type="text" id="12thBoard" name="board_name12" required />
+
+            <label for="12thYear">Passing Year</label>
+            <input type="date" id="12th-date" name="passing_year12" required />
+
+            <label for="12thGrade">Percentage/Grade</label>
+            <input type="text" id="12thGrade" name="percentage12" required />
+
+            <label for="12thField">Subject</label>
+            <select id="12thField" name="field_of_study12" required>
+              <option value="">Select Subject</option>
+              <option value="PCM">PCM</option>
+              <option value="PCB">PCB</option>
+              <option value="PCMB">PCMB</option>
+              <option value="Commerece">Commerece</option>
+              <option value="Commerece + maths ">Commerece + maths</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="education-section" id="section-UG">
+          <div class="section-header" data-target="UG-details">
+            <h3>Undergraduate (UG)</h3>
+            <button type="button" class="toggle-button">+</button>
+          </div>
+          <div class="section-details" id="UG-details">
+            <label for="UGDegree">Degree</label>
+            <select id="UGDegree" name="UGDegree_name" required>
+              <option value="">Select Degree</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Management">Management</option>
+              <option value="BA">BA</option>
+              <option value="BSc">BSc</option>
+              <option value="Others">Others</option>
+            </select>
+
+            <div id="UGFieldContainer" style="display: none">
+              <label for="UGField">Field of Study</label>
+              <select id="UGField" name="UGField_name">
+                <option value="">Select Field</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+
+            <label for="UGInstitution">Institution Attended</label>
+            <input
+              type="text"
+              id="UGInstitution"
+              name="UGInstitution"
+              required
+            />
+
+            <label for="UGYear">Year of Completion</label>
+            <input type="date" id="UG-date" name="passsing_yearUG" required />
+
+            <label for="UGGrade">Percentage/Grade</label>
+            <input type="text" id="UGGrade" name="percentage_UG" required />
+          </div>
+        </div>
+
+        <div class="education-section" id="section-PG">
+          <div class="section-header" data-target="PG-details">
+            <h3>Postgraduate (PG)</h3>
+            <button type="button" class="toggle-button">+</button>
+          </div>
+          <div class="section-details" id="PG-details">
+            <label for="PGDegree">Degree</label>
+            <select id="PGDegree" name="PGDegree_name" required>
+              <option value="">Select Degree</option>
+              <option value="MBA">MBA</option>
+              <option value="MSc">MSc</option>
+              <option value="MTech">MTech</option>
+              <option value="Others">Others</option>
+            </select>
+
+            <div id="PGFieldContainer" style="display: none">
+              <label for="PGField">Field of Study</label>
+              <select id="PGField" name="PGField_name">
+                <option value="">Select Field</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Information Technology">
+                  Information Technology
+                </option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+
+            <label for="PGInstitution">Institution Attended</label>
+            <input
+              type="text"
+              id="PGInstitution"
+              name="PGInstitution_name"
+              required
+            />
+
+            <label for="PGYear">Year of Completion</label>
+            <input type="date" id="PG-date" name="passing_yearPG" required />
+
+            <label for="PGGrade">Percentage/Grade</label>
+            <input type="text" id="PGGrade" name="percentage_PG" required />
+          </div>
+        </div>
+
+        <div class="education-section" id="section-PhD">
+          <div class="section-header" data-target="PhD-details">
+            <h3>PhD</h3>
+            <button type="button" class="toggle-button">+</button>
+          </div>
+          <div class="section-details" id="PhD-details">
+            <label for="PhDField">Field of Study</label>
+            <input type="text" id="PhDField" name="PhD_Field_name" required />
+
+            <label for="PhDThesis">Thesis Title (optional)</label>
+            <input type="text" id="PhDThesis" name="PhD_Thesis_topic" />
+
+            <label for="PhDInstitution">Institution Attended</label>
+            <input
+              type="text"
+              id="PhDInstitution"
+              name="PhDInstitution_name"
+              required
+            />
+
+            <label for="PhDYear">Year of Completion</label>
+            <input type="date" id="PHD-date" name="PhD_year_of_passing" required />
+
+            <label for="PhDSupervisor">Supervisor's Name (optional)</label>
+            <input type="text" id="PhDSupervisor" name="PhD_Supervisor_name" />
+
+            <label for="PhDSummary">Research Summary (optional)</label>
+            <textarea id="PhDSummary" name="PhDSummary" rows="4"></textarea>
+          </div>
+        </div>
+
+        <button type="button" class="btn" id="nextButton">Next</button>
+        <button type="reset" class="btn" id="resetButton">Reset</button>
+      </form>
+    </div>
+
+    <script src="education.js"></script>
+  </body>
+</html>
